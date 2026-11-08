@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jennifer Belén Cardoza Mena</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Dynamic Animated Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">JENNIFER CARDOZA | <span>STRATEGIC MARKETING & DEV</span></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="btn-nav">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-image-container">
+                <img src="img/mi-foto.jpg" alt="Professional portrait of Jennifer Belén Cardoza Mena" class="profile-img" onerror="this.src='https://via.placeholder.com/180?text=Jennifer+Cardoza';">
+            </div>
+            <div class="hero-text">
+                <h1>Jennifer Belén Cardoza Mena</h1>
+                <p class="subtitle"><i class="fa-solid fa-chart-line"></i> Future Strategic Marketing Professional</p>
+                <p>Fusing <span>Technology, Creativity & Strategic Marketing</span> to solve real-world problems and build innovative digital solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="about-section">
+        <h2>ABOUT ME</h2>
+        <div class="about-card">
+            <p>
+                I am a student at <strong>Centro ¡Supérate! ADOC</strong>, where I have developed my English, computer, and personal skills. My interest in technology started through my learning experiences in the program, where I discovered how technology can be used to create projects, solve problems, and develop new ideas.
+            </p>
+            <p>
+                I enjoy being creative, learning new things, and working with others. One of my most meaningful experiences was participating in the development of <strong>ScholarNet</strong>, a project that helped me improve my research and teamwork skills.
+            </p>
+            <p>
+                In the future, I would like to study <strong>Strategic Marketing at Universidad Doctor Andrés Bello</strong>. I want to combine creativity, communication, and technology to develop new ideas and create valuable opportunities.
+            </p>
+            <div class="highlight-text">
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+                <em>"I am a creative, responsible, and motivated student who enjoys learning new things, developing ideas, and working with others. I am interested in strategic marketing and always looking for opportunities to grow, improve my skills, and make a positive impact."</em>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>VERIFIED SKILLS</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Frontend Web Development</h3>
+                <p>HTML5, CSS3, and JavaScript layout creation, responsive design, and component styling (demonstrated in ScholarNet, FoodCheck, and RetroShot).</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>AI & Data Curation</h3>
+                <p>Machine learning dataset preparation, image classification training, and TensorFlow.js integration (demonstrated in FoodCheck).</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3>UI/UX & Brand Strategy</h3>
+                <p>E-commerce user interface design, digital branding, and product experience structuring (demonstrated in RetroShot).</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <h3>Research & Teamwork</h3>
+                <p>Information curation, educational data structuring, and collaborative agile development (demonstrated in ScholarNet).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>FEATURED PROJECTS</h2>
+        
+        <!-- Main Featured Project: ScholarNet -->
+        <article class="project-card hero-project">
+            <div class="card-image">
+                <img src="img/scholarnet-preview.png" alt="Screenshot of ScholarNet scholarship portal homepage" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="placeholder-img" style="display:none;">
+                    <span><i class="fa-solid fa-graduation-cap"></i> ScholarNet Preview</span>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-top-header">
+                    <div class="featured-badge"><i class="fa-solid fa-star"></i> Featured Main Project</div>
+                    <span class="project-type"><i class="fa-solid fa-users"></i> Group Project</span>
+                </div>
+                <h3>ScholarNet — Scholarship Information Platform</h3>
+                <p class="tech-stack">HTML5 | CSS3 | JavaScript | Python (Kivy)</p>
+                
+                <div class="project-details">
+                    <p><strong><i class="fa-solid fa-triangle-exclamation"></i> The Problem:</strong> Many students have difficulty finding scholarship opportunities because information is spread across different websites and sources, making it hard to compare requirements.</p>
+                    <p><strong><i class="fa-solid fa-gears"></i> The Process:</strong> Developed an initial app using Python & Kivy, then adapted it into a responsive website using HTML, CSS, and JavaScript, organizing scholarship data into intuitive sections.</p>
+                    <p><strong><i class="fa-solid fa-lightbulb"></i> The Solution:</strong> ScholarNet brings educational opportunities together in one place, allowing users to explore national/international scholarships, read guidelines, and check student experiences.</p>
+                </div>
+
+                <div class="project-role">
+                    <strong><i class="fa-solid fa-user-check"></i> My Specific Role:</strong> Researched and organized information about national and international scholarships, collecting and structuring data so students can explore opportunities easily.
+                </div>
+                <div class="card-links">
+                    <a href="https://scholarnet-web.github.io/ScholarnetSV-Web/" target="_blank" rel="noopener" class="btn-card"><i class="fa-solid fa-globe"></i> Live Website</a>
+                    <a href="https://github.com/Scholarnet-Web/ScholarnetSV-Web" target="_blank" rel="noopener" class="btn-card outline"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Secondary Projects Grid -->
+        <div class="secondary-projects-grid">
+
+            <!-- Project 2: FoodCheck -->
+            <article class="project-card">
+                <div class="card-image">
+                    <img src="img/foodcheck-preview.png" alt="Screenshot of FoodCheck AI real-time classifier interface" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="placeholder-img" style="display:none;">
+                        <span><i class="fa-solid fa-utensils"></i> FoodCheck Preview</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-top-header">
+                        <span class="project-type"><i class="fa-solid fa-users"></i> Group Project</span>
+                    </div>
+                    <h3>FoodCheck — AI-Powered Food Recognition</h3>
+                    <p class="tech-stack">HTML5 | CSS3 | JavaScript | TensorFlow.js | Teachable Machine</p>
+                    
+                    <div class="project-details">
+                        <p><strong><i class="fa-solid fa-triangle-exclamation"></i> The Problem:</strong> People do not always know how to identify different food types or understand their eating habits, needing an interactive tool to build awareness.</p>
+                        <p><strong><i class="fa-solid fa-gears"></i> The Process:</strong> Trained an AI model in Google Teachable Machine using custom food images, integrating it into an HTML/CSS/JS web frontend via TensorFlow.js.</p>
+                        <p><strong><i class="fa-solid fa-lightbulb"></i> The Solution:</strong> Allows users to upload or scan food images via camera. The AI classifies them as healthy, unhealthy, or not food, alongside healthy eating tips.</p>
+                    </div>
+
+                    <div class="project-role">
+                        <strong><i class="fa-solid fa-user-check"></i> My Specific Role:</strong> Trained the AI model in Google Teachable Machine, searching, selecting, and collecting food images to build the dataset.
+                    </div>
+                    <div class="card-links">
+                        <a href="https://jennifercardoza.github.io/foodcheck-web/" target="_blank" rel="noopener" class="btn-card"><i class="fa-solid fa-globe"></i> Live Demo</a>
+                        <a href="https://github.com/jennifercardoza/foodcheck-web" target="_blank" rel="noopener" class="btn-card outline"><i class="fa-brands fa-github"></i> GitHub Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: RetroShot -->
+            <article class="project-card">
+                <div class="card-image">
+                    <img src="img/retroshot-preview.png" alt="Screenshot of RetroShot vintage camera e-commerce catalog" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="placeholder-img" style="display:none;">
+                        <span><i class="fa-solid fa-camera-retro"></i> RetroShot Preview</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="card-top-header">
+                        <span class="project-type"><i class="fa-solid fa-user-group"></i> Pair Project</span>
+                    </div>
+                    <h3>RetroShot — Vintage Camera E-Commerce</h3>
+                    <p class="tech-stack">HTML5 | CSS3 | JavaScript | Responsive Design | E-Commerce UI/UX</p>
+                    
+                    <div class="project-details">
+                        <p><strong><i class="fa-solid fa-triangle-exclamation"></i> The Problem:</strong> Vintage camera enthusiasts lack dedicated, attractive, and well-organized online spaces to explore classic photography products.</p>
+                        <p><strong><i class="fa-solid fa-gears"></i> The Process:</strong> Planned the brand concept, designed visual UI/UX layouts, and developed the web platform using clean frontend code in a team of two.</p>
+                        <p><strong><i class="fa-solid fa-lightbulb"></i> The Solution:</strong> An e-commerce web catalog concept demonstrating how a creative photography idea can become a functional digital business platform.</p>
+                    </div>
+
+                    <div class="project-role">
+                        <strong><i class="fa-solid fa-user-check"></i> My Specific Role:</strong> Collaborative development: shared responsibilities in coding, website visual design, and building brand identity.
+                    </div>
+                    <div class="card-links">
+                        <a href="https://jennifercardoza.github.io/Proyecto-RetroShot/" target="_blank" rel="noopener" class="btn-card"><i class="fa-solid fa-globe"></i> Live Website</a>
+                        <a href="https://github.com/jennifercardoza/Proyecto-RetroShot.git" target="_blank" rel="noopener" class="btn-card outline"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>CONTACT</h2>
+        <p>Interested in learning more about my projects or collaborating on marketing, AI, or educational initiatives?</p>
+        <div class="contact-buttons">
+            <a href="mailto:jennifer.cardoza2026@adoc.superate.org" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Email</a>
+            <a href="https://github.com/jennifercardoza" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub Profile</a>
+        </div>
+    </section>
+
+    <!-- Footer & Credits -->
+    <footer>
+        <p>&copy; 2026 — Jennifer Belén Cardoza Mena | Centro ¡Supérate! ADOC</p>
+        <p class="credits-text">Third-party resources & tools: Google Teachable Machine, TensorFlow.js, GitHub Pages, Font Awesome, and Segoe UI fonts.</p>
+    </footer>
+
+    <!-- Background Animation Script -->
+    <script>
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let particlesArray = [];
+        const numberOfParticles = 85;
+
+        const mouse = {
+            x: null,
+            y: null,
+            radius: 150
+        };
+
+        window.addEventListener('mousemove', function(event) {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = (Math.random() - 0.5) * 1.5;
+                this.speedY = (Math.random() - 0.5) * 1.5;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width || this.x < 0) this.speedX *= -1;
+                if (this.y > canvas.height || this.y < 0) this.speedY *= -1;
+
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                if (distance < mouse.radius) {
+                    if (mouse.x < this.x && this.x < canvas.width - 10) this.x += 2;
+                    if (mouse.x > this.x && this.x > 10) this.x -= 2;
+                    if (mouse.y < this.y && this.y < canvas.height - 10) this.y += 2;
+                    if (mouse.y > this.y && this.y > 10) this.y -= 2;
+                }
+            }
+
+            draw() {
+                ctx.fillStyle = 'rgba(56, 189, 248, 0.8)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            for (let i = 0; i < numberOfParticles; i++) {
+                particlesArray.push(new Particle());
+            }
+        }
+
+        function connect() {
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let dx = particlesArray[a].x - particlesArray[b].x;
+                    let dy = particlesArray[a].y - particlesArray[b].y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 130) {
+                        let opacity = 1 - distance / 130;
+                        ctx.strokeStyle = `rgba(56, 189, 248, ${opacity * 0.25})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+                particlesArray[i].draw();
+            }
+            connect();
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+    </script>
+</body>
+</html>
